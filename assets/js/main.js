@@ -1,4 +1,4 @@
-/* Web Warriors Website JS By: Donald Oommen*/
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* Sticky Header on Scroll */
+  
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop;
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', headerFixed);
   }
 
-  /* Navbar links active state on scroll */
+  
   let navbarlinks = document.querySelectorAll('#navbar a');
 
   function navbarlinksActive() {
@@ -178,9 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /**
-   * Init swiper slider with 3 slides at once in desktop view
-   */
+  
   new Swiper('.slides-3', {
     speed: 600,
     loop: true,
@@ -210,9 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /**
-   * Porfolio isotope and filter
-   */
+
   let portfolionIsotope = document.querySelector('.portfolio-isotope');
 
   if (portfolionIsotope) {
@@ -247,9 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
-  /**
-   * Animation on scroll function and init
-   */
   function aos_init() {
     AOS.init({
       duration: 1000,
